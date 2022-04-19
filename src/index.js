@@ -2,29 +2,29 @@
 
 // Step One (Understand). We have to understand the problem.
 // 1. What is the unknown//output
-True/False
+// True/False
 // 2. What are the data inputs?
-two strings
+// two strings
 // 3. Can you restate the problem in your own words?
-is the first string in the second string?
+// is the first string in the second string?
 // 4. Can the unknown be determined from the data inputs?
-yes
+// yes
 // 5. Is the data inputs sufficient to determine the unknown? Insufficient? Redundant? Contradictory?
-sufficient
+// sufficient
 // 6. How should I label important pieces of data input that are a part of the problem?
-str1, str2
+// str1, str2
 // 7. Draw a figure. Introduce suitable notation.
 // 8. Separate the various parts of the condition. Can you write them down?
 
 // Step Two (Plan). Come up with concrete examples to help you understand the problem better. Find a connection between the data inputs and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found.
 // 9.  Have you seen it before? Or have you seen the same problem in a slightly different form? Do you know a related problem?
-yes
+// yes
 // 10.   Do you know a coding strategy that could be useful? Look at the unknown! And try to think of a familiar problem having the same or a similar unknown. Here is a problem related to yours and solve before. Could you use it? Could you use its result? Could you use its method?
 
 // 11.    Should you introduce some auxiliary element in order to make its use possible?
 // 12. Start with a simple example. Could you restate the problem? Could you restate it still differently?
-console.log(isSubsequence('hello', 'hello world'));
-console.log(isSubsequence('sing', 'sting'));
+console.log(isSubsequence("hello", "hello world"));
+console.log(isSubsequence("sing", "sting"));
 // 13. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs?
 
 // 14. Progress to more complex examples. What is your updated plan here to find a solution?
@@ -32,8 +32,6 @@ console.log(isSubsequence('sing', 'sting'));
 
 // Step Three (Solve). Carry out your plan of the solution and check each one of your steps in pseudocode.
 // 16.  Can you see clearly that the step is correct?
-
-
 
 // IV. 	Step Four (Check). Examine the solution obtained and refactor.
 // 17.  Can you check your result?
@@ -46,8 +44,13 @@ console.log(isSubsequence('sing', 'sting'));
 
 function isSubsequence(str1, str2) {
   //set up a empty object
-  // split the str into an array of characters with lowercase() 
+  let obj1 = {};
+  let obj2 = {};
+  // split the str into an array of characters with lowercase()
+  let arr1 = str1.toLowerCase().split("");
+  console.log(arr1);
+  let arr2 = str2.toLowerCase().split("");
   //iterate through the first arr1 and arr2 (for of loops)
-  //iterate with a for in loop to check if arr1[key]===arr2[key]
 
+  //iterate with a for in loop to check if arr1[key]===arr2[key]
 }
